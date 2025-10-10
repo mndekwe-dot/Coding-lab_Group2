@@ -75,13 +75,14 @@ while true; do
 	read -p "Enter your choice: " choice
 	
 	case $choice in
-		1) heart_rate_analyzer;;
-		2) temp_analyzer;;
-		3) water_usage_analyzer;;
-		4)
-			echo "Exiting......Good bye"
-			break;;
-		*) 
-			echo "Please enter a number between 1-4"
-	esac
+                1) heart_rate_analyzer;;
+                2) temp_analyzer;;
+                3) water_usage_analyzer;;
+                4)
+                        echo "Exiting......Good bye"
+                        break;;
+                *) 
+                        echo "Please enter a number between 1-4"
+        esac
 done
+
