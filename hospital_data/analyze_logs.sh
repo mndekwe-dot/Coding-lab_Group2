@@ -1,4 +1,7 @@
 #!/bin/bash
+
+# a function that counts the number of entries per device, captures the timestamps of the first and last entry in the heart_rate.log file, and write the results to analysis_report.txt
+
 heart_rate_analyzer () {
 	log_file="Coding-lab_Group2/hospital_data/active_logs/heart_rate.log"
 	report_file="Coding-lab_Group2/hospital_data/reports/analysis_report.txt"
@@ -17,6 +20,8 @@ heart_rate_analyzer () {
 		echo "Report Generated successfully"
 	fi
 }
+
+# a function that counts the number of entries per device, captures the timestamps of the first and last entry in the temperature.log file, and write the results to analysis_report.txt
 
 temp_analyzer () {
 	log_file="Coding-lab_Group2/hospital_data/active_logs/temperature.log"
@@ -37,6 +42,8 @@ temp_analyzer () {
 	fi
 }
 
+# a function that counts the number of entries per device, captures the timestamps of the first and last entry in the water_usage.log file, and write the results to analysis_report.txt
+
 water_usage_analyzer () {
         log_file="Coding-lab_Group2/hospital_data/active_logs/water_usage.log"
 	report_file="Coding-lab_Group2/hospital_data/reports/analysis_report.txt"
@@ -55,6 +62,8 @@ water_usage_analyzer () {
 		echo "Report Generated successfully"
         fi
 }
+
+# This while loop continuously presents a menu for the user until they selects option 4 to exit. For options between 1-3 it will call the corresponding analyzer function using a switch (case) statment
 while true; do
 	echo "==================Menu================"
 	echo "Select log file to analyze: "
