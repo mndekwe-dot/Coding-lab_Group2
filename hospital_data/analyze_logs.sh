@@ -63,7 +63,7 @@ water_usage_analyzer () {
         fi
 }
 
-# This while loop continuously presents a menu for the user until they selects option 4 to exit. For options between 1-3 it will call the corresponding analyzer function using a switch (case) statment
+# This while loop continuously presents a menu for the user until they selects option 4 to exit. For options between 1-3 it will call the corresponding analyzer function using a switch (case) statment. If no option is choosen between 1-4 it will tell the user to enter a valid option and presents the menu again.
 while true; do
 	echo "==================Menu================"
 	echo "Select log file to analyze: "
