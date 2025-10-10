@@ -3,7 +3,7 @@ Overview
 This project manages log files for hospital monitoring devices. It simulates three types of equipment: heart rate monitors, temperature sensors, and water meters that continuously generate data. The system provides two bash scripts to archive old logs and analyze device statistics, preventing files from growing too large while helping staff quickly understand device performance without manually reading thousands of entries.
 Quick Setup
 # Clone and navigate
-git clone https://github.com/yourusername/Coding-lab_Group{nbr}.git
+git clone https://github.com/yourusername/Coding-lab_Group2.git
 cd Coding-lab_Group2
 
 # Create directories
